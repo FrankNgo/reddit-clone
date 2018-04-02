@@ -3,14 +3,11 @@ import { Post } from '../post.model';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-front-page',
-  templateUrl: './front-page.component.html',
-  styleUrls: ['./front-page.component.css']
+  selector: 'app-askreddit',
+  templateUrl: './askreddit.component.html',
+  styleUrls: ['./askreddit.component.css']
 })
-export class FrontPageComponent {
-
-  post = null;
-
+export class AskredditComponent implements OnInit {
 
   constructor(private router: Router){}
 
@@ -28,13 +25,6 @@ export class FrontPageComponent {
    new Post("Programmers Keyboard Heatmap", "papperskassen",
        "r/ProgrammerHumor","https://b.thumbs.redditmedia.com/hwiNu8qP4UMmPN3snDnwWEBX_gzQ1QZCzfThfrp6ijs.jpg",.2,6)
   ];
-
-
-  upVote(post) {
-    this.post.vote += 1;
-    alert("Test");
-  }
-
   ngOnInit() {
   }
 

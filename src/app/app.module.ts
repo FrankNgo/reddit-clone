@@ -4,12 +4,16 @@ import { routing } from './app.routing';
 
 import { AppComponent } from './app.component';
 import { FrontPageComponent } from './front-page/front-page.component';
+import { AskredditComponent } from './askreddit/askreddit.component';
+import { WorldnewsComponent } from './worldnews/worldnews.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    FrontPageComponent
+    FrontPageComponent,
+    AskredditComponent,
+    WorldnewsComponent
   ],
   imports: [
     BrowserModule,

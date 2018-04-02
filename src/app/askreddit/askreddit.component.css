@@ -37,4 +37,15 @@ img.resize {
 
 #votes{
   text-align: center;
+  min-width: 50px;
+  align-items: center;
+}
+
+h4{
+  margin-left: 122px;
+  margin-top: -46px;
+}
+
+.numbers{
+  min-width: 5px;
 }

@@ -1,18 +1,18 @@
+<h4>askreddit</h4>
 <div *ngFor="let post of posts" class="panel panel-default">
   <div class="panel-body">
     <div class="row">
-      <div class="col-3-md">
+      <div class="col-3-md numbers">
         <label class="sideText" style="color:#c6c6c6">{{ post.id }}</label>
       </div>
     <div id="votes" class="col-3-md ">
       <label (clickedUp)="upVote($event)" class="upArrow">&#8679;</label><br>
       <label style="color:#c6c6c6">{{post.vote}}K</label><br>
       <label class="downArrow">&#8681;</label>
-
     </div>
     <div class="col-3-md">
-      <img class="resize "src="{{post.image}}">
-      <label><a href="">{{post.title}}</a> <br> submitted 6 hours ago by <a href="">{{post.username}}</a> to <a href="">{{post.subreddit}}</a><br><a class="botText" href="">6173 commments</a> <a class="botText" href="">share </a><a class="botText" href="">save </a><a class="botText" href="">hide </a><a class="botText" href="">report</a></label>
+      <!-- <img class="resize "src="{{post.image}}"> -->
+      <label><a href="">{{post.title}}</a> <br> submitted 6 hours ago by <a href="">{{post.username}}</a> <br><a class="botText" href="">6173 commments</a> <a class="botText" href="">share </a><a class="botText" href="">save </a><a class="botText" href="">hide </a><a class="botText" href="">report</a></label>
     </div>
   </div>
 </div>
